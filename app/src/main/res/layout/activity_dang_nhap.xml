@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.example.minh.nckh.Activity.DangNhapActivity">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark"
+                app:title="Đăng nhập"
+                app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="cursive"
+                android:text="HaNoi Shop"
+                android:textColor="#fff"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Tài khoản"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edt_user"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#fff"
+                android:drawableLeft="@drawable/user"
+                android:inputType="textEmailAddress"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Mật khẩu"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#fff"
+                android:drawableLeft="@drawable/key"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/chk_remember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#fff"
+                    android:text="Nhớ mật khẩu"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:background="#fff"
+                android:text="Đăng nhập"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Chưa có tài khoản? Đăng ký"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

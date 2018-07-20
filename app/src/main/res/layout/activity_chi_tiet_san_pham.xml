@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.minh.nckh.Activity.ChiTietSanPhamActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimaryDark"
+            app:title="Thông tin về sản phẩm"
+            app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:background="#fff"
+                            android:id="@+id/img_thongtinsp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitCenter" />
+
+                        <Button
+                            android:id="@+id/btn_xemthem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:background="@null"
+                            android:text="Xem thêm"
+                            android:textColor="#fff"
+                            android:textSize="10sp" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:background="#fff"
+                        android:id="@+id/txt_thongtin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Mieu ta" />
+
+                    <TextView
+                        android:id="@+id/txtLienQuan"
+                        android:textColor="#ff0000"
+                        android:textStyle="italic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sản phẩm liên quan" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="#fff">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycle_view"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bình luận" />
+
+                    <LinearLayout
+                        android:background="#fff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:background="@drawable/a_edit_text_binhluan"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/edt_binhluan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Nhập bình luận" />
+
+                        <Button
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/a_button_binhluan"
+                            android:id="@+id/btn_binhluan"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="right"
+                            android:text="Bình luận" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6 bình luận" />
+
+                    <ListView
+                        android:id="@+id/list_binhluan"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:background="#fff">
+
+                    </ListView>
+
+                </LinearLayout>
+            </TableLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/a_button_thanh_toan"
+            android:textColor="#fff"
+            android:id="@+id/btn_thanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt hàng" />
+    </LinearLayout>
+</LinearLayout>
+

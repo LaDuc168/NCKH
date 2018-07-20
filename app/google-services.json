@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "735268248363",
+    "firebase_url": "https://nghiencuukh-ed344.firebaseio.com",
+    "project_id": "nghiencuukh-ed344",
+    "storage_bucket": "nghiencuukh-ed344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735268248363:android:2dbbb018d8fd659f",
+        "android_client_info": {
+          "package_name": "com.example.minh.nckh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735268248363-kq9mvinbvtq2h2s547glt81fp1c0kbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfkI8A8uAAxvTfwMtynoG8JW7enlgjUoQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

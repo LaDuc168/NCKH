@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="#e8e8e6"
+    tools:context="com.example.minh.nckh.Activity.GioHangActivity">
+
+    <ListView
+        android:background="#fff"
+        android:id="@+id/list_giohang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="#fffefe"
+        android:dividerHeight="5dp"
+        android:layout_weight="7"></ListView>
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Tổng tiền:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/txt_tongtien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0 VNĐ"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="2"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/btn_thanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/a_button_thanh_toan"
+            android:text="Thanh toán giỏ hàng"
+            android:textColor="#fff" />
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btn_tieptucmua"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/a_button_tieptucmua"
+            android:text="Tiếp tục mua"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

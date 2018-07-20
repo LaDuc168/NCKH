@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:elevation="3dp"
+        android:layout_margin="5dp"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:background="@drawable/a_border_recycle_view">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_sp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:id="@+id/txt_tensp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tên sản phẩm"
+                    android:textColor="#1f1f1e"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_giasp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#ff0000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

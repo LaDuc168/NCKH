@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NCKH</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_animation_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
